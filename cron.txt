@@ -1,0 +1,4 @@
+PATH=/Users/shion888/projects/line-notify-app/env/bin:/usr/local/opt/openssl@1.1/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/shion888/.local/bin:/Users/shion888/.cabal/bin:/Users/shion888/.ghcup/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/openssl@1.1/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/shion888/.local/bin:/Users/shion888/.cabal/bin:/Users/shion888/.ghcup/bin:/Users/shion888/anaconda3/bin:/Users/shion888/anaconda3/condabin:/Users/shion888/.local/bin:/Users/shion888/.local/bin
+
+# minute, hour, day, month, day of week, command
+*/1 * * * * python /Users/shion888/projects/line-notify-app/app.py >> /Users/shion888/projects/line-notify-app/cron.log 2>&1
