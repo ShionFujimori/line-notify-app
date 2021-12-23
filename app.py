@@ -3,16 +3,12 @@ import os
 import time
 import datetime
 import argparse
-import urllib
 from dotenv import load_dotenv
 
-# web crawling
+# web crawling & scraping
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-
-# web scraping
-from bs4 import BeautifulSoup
 
 
 # Obtain LINE token from .env file
@@ -113,9 +109,7 @@ def get_search_results_num(search_words: str, window=False) -> str:
     elem.send_keys(search_words)
     time.sleep(2)
     
-    # Click search button
-    # button = browser.find_element(By.NAME, 'btnK')
-    # button.click()
+    # Press enter key
     elem.send_keys(Keys.ENTER)
 
     # Extract a number of search results
