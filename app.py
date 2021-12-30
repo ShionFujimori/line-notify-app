@@ -108,7 +108,7 @@ def get_search_results_num(search_words: str, window=False) -> str:
     elem.clear()
     elem.send_keys(search_words)
     time.sleep(2)
-    
+
     # Press enter key
     elem.send_keys(Keys.ENTER)
 

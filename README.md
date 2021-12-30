@@ -20,20 +20,24 @@ python app.py -type {stock, search-num} -keyword KEYWORD
 crontab cron.txt
 ```
 
-### How to change the periodic run settings?
+#### How to change the periodic run settings?
 1. Open the cron.txt file, and change the settings.
 2. `crontab cron.txt`
 
-### How to stop the periodic run?
+#### How to stop the periodic run?
 1. Open the cron.txt, and comment out the settings.
 2. `crontab cron.txt`
 
-### Aside: How to edit the crontab file directly?
+#### Aside: How to edit the crontab file directly?
 ```
 crontab -e
 ```
 
-### Aside: How to view the content of crontab file?
+#### Aside: How to view the content of crontab file?
 ```
 crontab -l
 ```
+
+## CI/CD
+- CI: python-flake8 check when a new pull request is created.
+- CD: TODO.
