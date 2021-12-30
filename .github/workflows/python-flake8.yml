@@ -3,7 +3,7 @@ name: python-flake8
 on:
   pull_request:
     branches:
-      - "main"
+      - "master"
 
 jobs:
   python-flake8:
