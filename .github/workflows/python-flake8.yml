@@ -17,3 +17,5 @@ jobs:
       with:
         checkName: "python-flake8"
         config: setup.cfg
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GITHUB }}
